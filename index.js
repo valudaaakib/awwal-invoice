@@ -330,5 +330,6 @@ app.get("/api/hubspot/cards/invoices", async (req, res) => {
 });
 
 
-app.listen(PORT, () => console.log(`=== Starting your app on http://localhost:${PORT} ===`));
+app.listen();
+
 
