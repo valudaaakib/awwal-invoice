@@ -53,7 +53,7 @@ if (process.env.SCOPE) {
 }
 
 // On successful install, users will be redirected to /oauth-callback
-const REDIRECT_URI = `http://localhost:${PORT}/oauth-callback`;
+const REDIRECT_URI = `https://awwal-invoice.netlify.app/oauth-callback`;
 
 //===========================================================================//
 
@@ -331,3 +331,4 @@ app.get("/api/hubspot/cards/invoices", async (req, res) => {
 
 
 app.listen(PORT, () => console.log(`=== Starting your app on http://localhost:${PORT} ===`));
+
