@@ -127,6 +127,8 @@ app.get('/oauth-callback', async (req, res) => {
   }
 });
 
+
+
 //==========================================//
 //   Exchanging Proof for an Access Token   //
 //==========================================//
@@ -231,6 +233,12 @@ app.get('/error', (req, res) => {
   res.end();
 });
 
+app.get('/hello', (req, res) => {
+ 
+  res.write(`<h4>hello</h4>`);
+  
+});
+
 
 app.get("/api/hubspot/cards/invoices", async (req, res) => {
   console.log("🚀 Starting to fetch invoices...");
@@ -331,5 +339,6 @@ app.get("/api/hubspot/cards/invoices", async (req, res) => {
 
 
 app.listen();
+
 
 
